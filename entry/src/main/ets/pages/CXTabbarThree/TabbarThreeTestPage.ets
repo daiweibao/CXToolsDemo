@@ -1,17 +1,17 @@
 
 //自定义tababr
-import {CXTabbar} from './CXTabbar/CXTabbar'
-import router from '@ohos.router' //路由
+import {CXTabbarThree} from './CXTabbarThree'
+import router from '@ohos.router'//路由
 
-import home from './Home' //首页
-import goals from './Goals' //行程
-import reccuring from './Reccuring' //发现
-import Mine from './Mine' //我的
+import home from '../Home'//首页
+import goals from '../Goals'//行程
+import reccuring from '../Reccuring'//发现
+import Mine from '../Mine'//我的
 
 
 @Entry
 @Component
-struct Index {
+struct TabbarThreeTestPage {
   //tabar控制器，手动切换角标用
   private tabsController : TabsController = new TabsController()
   //当前选中的角标,默认为0
@@ -50,19 +50,11 @@ struct Index {
         })
 
         //自定义tabbar，直接覆盖在系统tabbar上面
-        CXTabbar({currentIndex:$currentIndex,
+        CXTabbarThree({currentIndex:$currentIndex,
           tabItemClick:()=>{
             //点击tabbar
             this.tabsController.changeIndex(this.currentIndex)
             console.log('点击选中tabbar:',this.currentIndex);
-          },
-          tabItemTuchuClick:()=>{
-            //点击凸出的tabbar
-            console.log('点击了中间凸出的tabbar');
-            router.pushUrl({
-              url:'pages/TuChuPage'
-            }),
-            router.RouterMode.Standard//页面跳转模型，RouterMode枚举
           }
         })
       }

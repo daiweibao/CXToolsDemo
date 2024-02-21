@@ -1,6 +1,9 @@
 {
   "src": [
     "pages/Index",
-    "pages/TuChuPage"
+    "pages/TuChuPage",
+    "pages/CXToolsListPage",
+    "pages/CXTabbarTwo/TabbarTwoTestPage",
+    "pages/CXTabbarThree/TabbarThreeTestPage"
   ]
 }

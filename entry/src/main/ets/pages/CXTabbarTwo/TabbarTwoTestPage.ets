@@ -1,17 +1,17 @@
 
 //自定义tababr
-import {CXTabbar} from './CXTabbar/CXTabbar'
-import router from '@ohos.router' //路由
+import {CXTabbarTwo} from './CXTabbarTwo'
+import router from '@ohos.router'//路由
 
-import home from './Home' //首页
-import goals from './Goals' //行程
-import reccuring from './Reccuring' //发现
-import Mine from './Mine' //我的
+import home from '../Home'//首页
+import goals from '../Goals'//行程
+import reccuring from '../Reccuring'//发现
+import Mine from '../Mine'//我的
 
 
 @Entry
 @Component
-struct Index {
+struct TabbarTwoTestPage {
   //tabar控制器，手动切换角标用
   private tabsController : TabsController = new TabsController()
   //当前选中的角标,默认为0
@@ -50,7 +50,7 @@ struct Index {
         })
 
         //自定义tabbar，直接覆盖在系统tabbar上面
-        CXTabbar({currentIndex:$currentIndex,
+        CXTabbarTwo({currentIndex:$currentIndex,
           tabItemClick:()=>{
             //点击tabbar
             this.tabsController.changeIndex(this.currentIndex)
