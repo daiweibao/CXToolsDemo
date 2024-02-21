@@ -11,7 +11,7 @@ struct CXToolsListPage {
     'tabbar突出-无背景',
     '标准tababr',
     'loading加载中',
-    '功能2',
+    'http网络请求',
     '功能2',
     '功能2',
     '功能2',
@@ -81,6 +81,9 @@ struct CXToolsListPage {
       }else if (index===2){
         //标准tababr
         router.pushUrl({url:'pages/Loading/LoadingTestPage'})
+      }else if (index===3){
+        //http网络请求
+        router.pushUrl({url:'pages/HttpPage/Pages/ShopPage'})
       }
     })
   }

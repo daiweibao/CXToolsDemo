@@ -5,6 +5,7 @@
     "pages/CXToolsListPage",
     "pages/CXTabbarTwo/TabbarTwoTestPage",
     "pages/CXTabbarThree/TabbarThreeTestPage",
-    "pages/Loading/LoadingTestPage"
+    "pages/Loading/LoadingTestPage",
+    "pages/HttpPage/Pages/ShopPage"
   ]
 }
