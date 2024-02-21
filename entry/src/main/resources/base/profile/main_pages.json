@@ -4,6 +4,7 @@
     "pages/TuChuPage",
     "pages/CXToolsListPage",
     "pages/CXTabbarTwo/TabbarTwoTestPage",
-    "pages/CXTabbarThree/TabbarThreeTestPage"
+    "pages/CXTabbarThree/TabbarThreeTestPage",
+    "pages/Loading/LoadingTestPage"
   ]
 }

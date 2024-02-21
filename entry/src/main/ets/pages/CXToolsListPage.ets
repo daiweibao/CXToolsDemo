@@ -10,7 +10,7 @@ struct CXToolsListPage {
   private dataSouce: Array<string> = [
     'tabbar突出-无背景',
     '标准tababr',
-    '功能2',
+    'loading加载中',
     '功能2',
     '功能2',
     '功能2',
@@ -78,6 +78,9 @@ struct CXToolsListPage {
       }else if (index===1){
         //标准tababr
         router.pushUrl({url:'pages/CXTabbarThree/TabbarThreeTestPage'})
+      }else if (index===2){
+        //标准tababr
+        router.pushUrl({url:'pages/Loading/LoadingTestPage'})
       }
     })
   }
