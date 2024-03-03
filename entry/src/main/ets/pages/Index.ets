@@ -1,4 +1,3 @@
-ohpm -v
 //自定义tababr
 import {CXTabbar} from './CXTabbar/CXTabbar'
 import router from '@ohos.router' //路由
